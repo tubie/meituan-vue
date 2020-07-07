@@ -1,13 +1,17 @@
 <template>
-  <div id="app">
+  <div
+    id="app"
+    class="app-container"
+  >
 
-    <nut-navbar
-        style="background-color:#000; color: #fff; height:54px; line-height: 54px;"
-      :leftShow="false"
-      :rightShow="false"
-    >title</nut-navbar>
+    <mt-header
+      fixed
+      title="固定在顶部"
+    ></mt-header>
 
-    <router-view/>
+    <transition>
+      <router-view></router-view>
+    </transition>
 
     <nut-tabbar
       @tab-switch="tabSwitch3"
@@ -21,19 +25,14 @@
 
 <script>
 export default {
-  // components:{
-  //   [tabbar.name]: tabbar,
-  // },
   data() {
     return {
       tabList3: [
         {
           tabTitle: "首页",
-          curr: true,
-          icon:
-            "http://img13.360buyimg.com/uba/jfs/t1/29316/38/1115/3203/5c0f3d61E35d0c7da/9e557f2cb5c9dab6.jpg",
-          activeIcon:
-            "http://img20.360buyimg.com/uba/jfs/t1/9996/36/8646/4833/5c0f3d61E7c1b7e0f/c98ad61124172e93.jpg",
+          curr: false,
+          icon: "/image/icon_home_normal.jpg",
+          activeIcon: "/image/icon_home_select.jpg",
           href: "/homepage"
         },
         {
@@ -68,35 +67,37 @@ export default {
   },
   methods: {
     tabSwitch3: function(value, index) {
-      console.log(index);
+      // 记录选择的下标 缓存起来
+      window.localStorage.setItem("tabBarIndex", index);
+    }
+  },
+  created() {
+    let localData = window.localStorage.getItem("tabBarIndex");
+    if (localData === undefined || localData === null) {
+      this.tabList3[0].curr = true;
+    } else {
+      this.tabList3[localData].curr = true;
     }
   }
 };
 </script>
 
-<style>
 
-.nut-tabbar{
-
-}
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /*text-align: center;*/
-  color: #2c3e50;
+<style scoped>
+.app-container {
+  padding-top: 40px;
 }
 
-#nav {
-  padding: 30px;
+.mint-header {
+  background-color: red;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.v-enter {
+  opacity: 0;
+  transform: translateX(100%);
 }
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.v-leave-to {
+  opacity: 0;
+  transform: translateX(-100%);
+  position: absolute;
 }
 </style>

@@ -10,12 +10,10 @@ Vue.config.productionTip = false
 import '@nutui/nutui/dist/nutui.css';
 
 import NutUI from '@nutui/nutui';
-import enUS from '@nutui/nutui/dist/locales/lang/en-US';
+import MintUI from 'mint-ui'
+import 'mint-ui/lib/style.css'
 
-Vue.use(NutUI, {
-  locale: 'en-US',
-  lang: enUS
-});
+Vue.use(MintUI)
 NutUI.install(Vue);
 
 
