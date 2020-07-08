@@ -1,15 +1,147 @@
 <template>
 
-<div>首页</div>
-  
+  <div class="home-div">
+
+    <nut-tabbar
+      @tab-switch="tabSwitch1"
+      :tabbar-list="tabList1"
+    ></nut-tabbar>
+
+    <div class="mtItem-container-div">
+      <Mt9SquaresItem
+        v-for='(item , index ) in meituanItemList'
+        :key='index'
+      ></Mt9SquaresItem>
+    </div>
+
+    <mt-swipe :auto="4000">
+      <mt-swipe-item
+        v-for=' (item ,index) in swipeList '
+        :key="index"
+      >
+        <img
+          :src='item.imgUrl'
+          alt=""
+        >
+      </mt-swipe-item>
+    </mt-swipe>
+
+
+    <div class="waterFlowContainer-div">
+     <MtWaterfallsFlowItem v-for="(item, index) in waterFlowlist" :key="index"></MtWaterfallsFlowItem>
+    </div>
+
+  </div>
+
 </template>
 
 <script>
-export default {
+import Mt9SquaresItem from "../../components/Mt9SquaresItem.vue";
+import MtWaterfallsFlowItem from "../../components/MtWaterfallsFlowItem.vue";
 
-}
+export default {
+  name: "home",
+  data() {
+    return {
+      tabList1: [
+        {
+          tabTitle: "日用品",
+          curr: true,
+          icon:
+            "http://img13.360buyimg.com/uba/jfs/t30331/209/562746340/2190/6619973d/5bf763aaN6ff02099.jpg",
+          activeIcon:
+            "http://img20.360buyimg.com/uba/jfs/t28675/125/569589124/2710/fe1b0e7c/5bf79218Nbc49fc24.jpg"
+        },
+        {
+          tabTitle: "服饰",
+          curr: false,
+          icon:
+            "http://img13.360buyimg.com/uba/jfs/t27280/289/2061314663/2392/872e32ff/5bf76318Ndc80c1d8.jpg",
+          activeIcon:
+            "http://img14.360buyimg.com/uba/jfs/t28468/128/565494642/3313/ce508dd6/5bf79214Nab2a3076.jpg"
+        },
+        {
+          tabTitle: "娱乐",
+          curr: false,
+          icon:
+            "http://img10.360buyimg.com/uba/jfs/t26779/215/2118525153/2413/470d1613/5bf767b2N075957b7.jpg",
+          activeIcon:
+            "http://img11.360buyimg.com/uba/jfs/t27370/260/2117900302/3274/bd097e85/5bf7921bNafc526e2.jpg"
+        },
+        {
+          tabTitle: "娱乐",
+          curr: false,
+          icon:
+            "http://img10.360buyimg.com/uba/jfs/t26779/215/2118525153/2413/470d1613/5bf767b2N075957b7.jpg",
+          activeIcon:
+            "http://img11.360buyimg.com/uba/jfs/t27370/260/2117900302/3274/bd097e85/5bf7921bNafc526e2.jpg"
+        }
+      ],
+      swipeList: [
+        {
+          imgUrl:
+            "http://img5.imgtn.bdimg.com/it/u=3837875987,2852737972&fm=15&gp=0.jpg"
+        },
+        { imgUrl: "http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg" },
+        {
+          imgUrl:
+            "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg"
+        }
+      ],
+      meituanItemList: [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+      ],
+      waterFlowlist:["1","2","3","2","3","2","3","2","3","2","3","2","3","2","3","2","3","2","3","2","3"]
+    };
+  },
+  methods: {
+    tabSwitch1: function(value, index) {
+      console.log(index);
+    }
+  },
+  components: {
+    Mt9SquaresItem,
+    MtWaterfallsFlowItem
+  }
+};
 </script>
 
-<style>
+<style lang="scss" scoped>
+.home-div {
+  .nut-tabbar {
+    background: rgba(244, 191, 66, 1);
+    margin-top: 0px;
+  }
+  .mint-swipe {
+    height: 180px;
+  }
+  .mtItem-container-div {
+    background: white;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    //   justify-content: space-between;
+  }
+  .waterFlowContainer-div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
+  }
+}
 </style>

@@ -86,10 +86,11 @@ export default {
 <style scoped>
 .app-container {
   padding-top: 40px;
+  padding-bottom: 70px;
 }
 
 .mint-header {
-  background-color: red;
+  background: rgba(244, 191, 66, 1);
 }
 .v-enter {
   opacity: 0;
