@@ -21,6 +21,9 @@ import VueClipboard from 'vue-clipboard2'
 Vue.use(VueClipboard)
 
 
+import './lib/mui/css/mui.min.css' 
+
+
 import { Base64 } from 'js-base64';
 Vue.use(Base64);
 

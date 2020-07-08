@@ -1,45 +1,77 @@
 <template>
 
-  <div>
+  <div class="find-container-div">
 
-    <mt-navbar v-model="selected">
-      <mt-tab-item id="1">option A</mt-tab-item>
-      <mt-tab-item id="2">option B</mt-tab-item>
-      <mt-tab-item id="3">option C</mt-tab-item>
-      
-    </mt-navbar>
+    <div
+      id="slider"
+      class="mui-slider"
+    >
+      <div
+        id="sliderSegmentedControl"
+        class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted"
+      >
+        <div class="mui-scroll">
+          <a
+            class="mui-control-item mui-active"
+            href="#item1mobile"
+            data-wid="tab-top-subpage-1.html"
+          >
+            推荐
+          </a>
+          <a
+            class="mui-control-item"
+            href="#item2mobile"
+            data-wid="tab-top-subpage-2.html"
+          >
+            热点
+          </a>
+          <a
+            class="mui-control-item"
+            href="#item3mobile"
+            data-wid="tab-top-subpage-3.html"
+          >
+            北京
+          </a>
+          <a
+            class="mui-control-item"
+            href="#item4mobile"
+            data-wid="tab-top-subpage-4.html"
+          >
+            社会
+          </a>
+          <a
+            class="mui-control-item"
+            href="#item5mobile"
+            data-wid="tab-top-subpage-5.html"
+          >
+            娱乐
+          </a>
+        </div>
+      </div>
 
-    <!-- tab-container -->
-    <mt-tab-container v-model="selected">
-      <mt-tab-container-item id="1">
-        <mt-cell
-          v-for="n in 10"
-          :title="'content ' + n"
-          :key="n"
-        />
-      </mt-tab-container-item>
-      <mt-tab-container-item id="2">
-        <mt-cell
-          v-for="n in 4"
-          :title="'content ' + n"
-          :key="n"
-        />
-      </mt-tab-container-item>
-      <mt-tab-container-item id="3">
-        <mt-cell
-          v-for="n in 6"
-          :title="'content ' + n"
-          :key="n"
-        />
-      </mt-tab-container-item>
-    </mt-tab-container>
+    </div>
+
   </div>
 
 </template>
 
 <script>
-export default {};
+import mui from "../../lib/mui/js/mui.min.js";
+export default {
+  name: "findPage",
+  data() {
+      return{};
+  },
+  methods: {},
+  mounted() {
+    mui(".mui-scroll-wrapper").scroll({
+      deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+    });
+  }
+};
 </script>
 
-<style>
-</style>
+<style lang="scss" scoped>
+.find-container-div {
+}
+</style>>

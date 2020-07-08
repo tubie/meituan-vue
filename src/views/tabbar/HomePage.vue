@@ -7,6 +7,20 @@
       :tabbar-list="tabList1"
     ></nut-tabbar>
 
+    <!-- <mt-swipe :auto="0">
+      <mt-swipe-item
+        v-for='(item , index ) in mt9SquaresItemPages'
+        :key='index'
+      >
+        <div class="mtItem-container-div">
+          <Mt9SquaresItem
+            v-for='(item , index ) in meituanItemList'
+            :key='index'
+          ></Mt9SquaresItem>
+        </div>
+      </mt-swipe-item>
+    </mt-swipe> -->
+
     <div class="mtItem-container-div">
       <Mt9SquaresItem
         v-for='(item , index ) in meituanItemList'
@@ -26,9 +40,11 @@
       </mt-swipe-item>
     </mt-swipe>
 
-
     <div class="waterFlowContainer-div">
-     <MtWaterfallsFlowItem v-for="(item, index) in waterFlowlist" :key="index"></MtWaterfallsFlowItem>
+      <MtWaterfallsFlowItem
+        v-for="(item, index) in waterFlowlist"
+        :key="index"
+      ></MtWaterfallsFlowItem>
     </div>
 
   </div>
@@ -103,9 +119,31 @@ export default {
         "3",
         "4",
         "5",
-        "6",
+        "6"
       ],
-      waterFlowlist:["1","2","3","2","3","2","3","2","3","2","3","2","3","2","3","2","3","2","3","2","3"]
+      waterFlowlist: [
+        "1",
+        "2",
+        "3",
+        "2",
+        "3",
+        "2",
+        "3",
+        "2",
+        "3",
+        "2",
+        "3",
+        "2",
+        "3",
+        "2",
+        "3",
+        "2",
+        "3",
+        "2",
+        "3",
+        "2"
+      ],
+      mt9SquaresItemPages: ["1", "2", "3"]
     };
   },
   methods: {
@@ -136,12 +174,16 @@ export default {
     flex-wrap: wrap;
     //   justify-content: space-between;
   }
-  .waterFlowContainer-div{
+  .waterFlowContainer-div {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .mint-swipe {
+    padding: 10px;
   }
 }
 </style>
