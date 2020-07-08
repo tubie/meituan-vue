@@ -1,7 +1,7 @@
 <template>
   <div class="mt-waterfallsFlow-item">
     <img
-      src="http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg"
+      :src='img_url'
       alt=""
     >
     <p>东方明珠广播电视塔</p>
@@ -13,7 +13,14 @@
 </template>
 
 <script>
-export default {};
+export default {
+    props:{
+        img_url:{
+            type:String,
+            default:"http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg"
+        }
+    }
+};
 </script>
 
 <style lang="scss">
