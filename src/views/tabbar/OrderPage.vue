@@ -42,15 +42,21 @@
     </mt-swipe>
 
 
+   <div class="mt-orderAllItem-container" v-for="(item ,index) in titleList" :key="index"> 
+       <MtOrderAllItem></MtOrderAllItem>
+   </div>
 
-    <ul>
+
+
+
+    <!-- <ul>
       <li
         v-for='(item,index) in waterFlowlist'
         :key="index"
       >
         <img v-lazy="item.src">
       </li>
-    </ul>
+    </ul> -->
 
   </div>
 
@@ -58,6 +64,7 @@
 
 <script>
 import mui from "../../lib/mui/js/mui.min.js";
+import MtOrderAllItem from "../../components/MtOrderAllItem.vue";
 
 export default {
   name: "orderpage",
@@ -131,8 +138,10 @@ export default {
     mui(".mui-scroll-wrapper").scroll({
       deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
     });
-  }
-};
+  },
+  components:{
+      MtOrderAllItem,}
+}
 </script>
 
 <style lang="scss" scoped>
@@ -141,6 +150,10 @@ export default {
   // padding: 10px;
   .mint-swipe {
     height: 80px;
+  }
+  .mt-orderAllItem-container{
+      background: rgb(243, 243, 243);
+      padding: 5px,;
   }
 }
 
