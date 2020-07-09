@@ -13,7 +13,7 @@ let routes;
 routes = [
   {
     path: '/',
-    component:HomePage
+    component:HomePage,
   },
   {
     path:'/homepage',

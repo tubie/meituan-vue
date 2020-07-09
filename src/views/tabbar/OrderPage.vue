@@ -29,7 +29,7 @@
 
     </div>
 
-      <mt-swipe :auto="4000">
+    <mt-swipe :auto="4000">
       <mt-swipe-item
         v-for=' (item ,index) in swipeList '
         :key="index"
@@ -42,7 +42,8 @@
     </mt-swipe>
 
 
-     <ul>
+
+    <ul>
       <li
         v-for='(item,index) in waterFlowlist'
         :key="index"
@@ -62,8 +63,16 @@ export default {
   name: "orderpage",
   data() {
     return {
-      titleList: ["测试1", "测试2", "测试3", "测试4", "测试5", "测试6", "测试7"],
-        swipeList: [
+      titleList: [
+        "测试1",
+        "测试2",
+        "测试3",
+        "测试4",
+        "测试5",
+        "测试6",
+        "测试7"
+      ],
+      swipeList: [
         {
           imgUrl:
             "http://img5.imgtn.bdimg.com/it/u=3837875987,2852737972&fm=15&gp=0.jpg"
@@ -76,8 +85,7 @@ export default {
       ],
       waterFlowlist: [
         {
-          src:
-            "http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          src: "http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
           title: "",
           subtitle: ""
         },
@@ -87,20 +95,7 @@ export default {
           subtitle: ""
         },
         {
-          src:
-            "http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
-          title: "",
-          subtitle: ""
-        },
-        {
-          src:
-            "http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
-          title: "",
-          subtitle: ""
-        },
-        {
-          src:
-            "http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          src: "http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
           title: "",
           subtitle: ""
         },
@@ -110,34 +105,46 @@ export default {
           subtitle: ""
         },
         {
-          src:
-            "http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          src: "http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
           title: "",
           subtitle: ""
         },
         {
-          src:
-            "http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          src: "http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          title: "",
+          subtitle: ""
+        },
+        {
+          src: "http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          title: "",
+          subtitle: ""
+        },
+        {
+          src: "http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
           title: "",
           subtitle: ""
         }
       ]
     };
   },
-   mounted() {
+  mounted() {
     mui(".mui-scroll-wrapper").scroll({
       deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
     });
-  },
+  }
 };
 </script>
 
 <style lang="scss" scoped>
 .orderpage {
-    background: white;
-    padding: 10px;
-    .mint-swipe {
+  background: white;
+  // padding: 10px;
+  .mint-swipe {
     height: 80px;
   }
+}
+
+.mui-control-item {
+  font-size: 12px;
 }
 </style>
