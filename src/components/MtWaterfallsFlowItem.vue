@@ -4,10 +4,12 @@
       :src='img_url'
       alt=""
     >
-    <p>东方明珠广播电视塔</p>
+    <div class="mt-waterfallsFlow-bottom-container-div">
+        <p>东方明珠广播电视塔</p>
     <p>姥姥家的小区</p>
     <p>10块钱按</p>
     <p>已售90000份</p>
+    </div>
 
   </div>
 </template>
@@ -26,5 +28,8 @@ export default {
 <style lang="scss">
 .mt-waterfallsFlow-item {
   width: 49%;
+  .mt-waterfallsFlow-bottom-container-div{
+      background: white;
+  }
 }
 </style>>

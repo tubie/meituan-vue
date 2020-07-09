@@ -12,6 +12,10 @@ Vue.use(VueRouter)
 let routes;
 routes = [
   {
+    path: '/',
+    component:HomePage
+  },
+  {
     path:'/homepage',
     component:HomePage
   },
@@ -32,7 +36,8 @@ routes = [
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes
+  routes,
+  linkActiveClass:'mui-active'//覆盖默认路由高亮的类 router-link-acative
 })
 
 export default router

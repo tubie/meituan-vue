@@ -13,12 +13,48 @@
       <router-view></router-view>
     </transition>
 
-    <nut-tabbar
+    <!-- <nut-tabbar
       @tab-switch="tabSwitch3"
       :tabbar-list="tabList3"
       :bottom="true"
     >
-    </nut-tabbar>
+    </nut-tabbar> -->
+
+    <nav class="mui-bar mui-bar-tab">
+
+      <router-link
+        class="mui-tab-item-lib"
+        to="/homepage"
+      >
+        <span class="mui-icon mui-icon-home"></span>
+        <span class="mui-tab-label">首页</span>
+      </router-link>
+
+      <router-link
+        class="mui-tab-item-lib"
+        to="/findpage"
+      >
+        <span class="mui-icon mui-icon-extra mui-icon-extra-class"></span>
+        <span class="mui-tab-label">发现</span>
+      </router-link>
+
+      <router-link
+        class="mui-tab-item-lib"
+        to="/orderpage"
+      >
+        <span class="mui-icon mui-icon-extra mui-icon-extra-cart"> <span class="mui-badge">9</span> </span>
+        <span class="mui-tab-label">订单</span>
+      </router-link>
+
+      <router-link
+        class="mui-tab-item-lib"
+        to="/minepage"
+      >
+        <span class="mui-icon mui-icon-extra mui-icon-extra-people"></span>
+        <span class="mui-tab-label">我的</span>
+      </router-link>
+
+    </nav>
 
   </div>
 </template>
@@ -72,21 +108,50 @@ export default {
     }
   },
   created() {
-    let localData = window.localStorage.getItem("tabBarIndex");
-    if (localData === undefined || localData === null) {
-      this.tabList3[0].curr = true;
-    } else {
-      this.tabList3[localData].curr = true;
-    }
+    // let localData = window.localStorage.getItem("tabBarIndex");
+    // if (localData === undefined || localData === null) {
+    //   this.tabList3[0].curr = true;
+    // } else {
+    //   this.tabList3[localData].curr = true;
+    // }
   }
 };
 </script>
 
 
-<style scoped>
+<style lang="scss" scoped>
 .app-container {
   padding-top: 40px;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
+
+  .mui-bar-tab .mui-tab-item-lib.mui-active {
+    color: #007aff;
+  }
+  .mui-bar-tab .mui-tab-item-lib {
+    display: table-cell;
+    overflow: hidden;
+    width: 1%;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #929292;
+  }
+  .mui-bar-tab .mui-tab-item-lib .mui-icon {
+    top: 3px;
+    width: 24px;
+    height: 24px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .mui-bar-tab .mui-tab-item-lib .mui-icon ~ .mui-tab-label {
+    font-size: 11px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 .mint-header {

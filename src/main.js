@@ -21,7 +21,9 @@ import VueClipboard from 'vue-clipboard2'
 Vue.use(VueClipboard)
 
 
-import './lib/mui/css/mui.min.css' 
+import './lib/mui/css/mui.min.css'
+//在mui的icon 找到指定的类 （图标拓展类）并引导入指定的 样式文件mui-icon-extra.ttf
+import './lib/mui/css/icons-extra.css'
 
 
 import { Base64 } from 'js-base64';
