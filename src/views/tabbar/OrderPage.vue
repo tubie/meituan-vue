@@ -29,7 +29,8 @@
 
     </div>
 
-    <mt-swipe :auto="4000">
+   <div class="mt-swipe-containter">
+        <mt-swipe :auto="4000">
       <mt-swipe-item
         v-for=' (item ,index) in swipeList '
         :key="index"
@@ -40,6 +41,7 @@
         >
       </mt-swipe-item>
     </mt-swipe>
+   </div>
 
 
    <div class="mt-orderAllItem-container" v-for="(item ,index) in titleList" :key="index"> 
@@ -154,6 +156,9 @@ export default {
   .mt-orderAllItem-container{
       background: rgb(243, 243, 243);
       padding: 5px,;
+  }
+  .mt-swipe-containter{
+      padding: 5px;
   }
 }
 

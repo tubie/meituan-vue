@@ -21,7 +21,7 @@
         </nut-col>
 
         <nut-col span="4">
-          <span>已完成</span>
+          <span class="top-container-right-p">已完成</span>
 
         </nut-col>
 
@@ -34,13 +34,6 @@
 
     <div class="center-container">
 
-      <!-- <img
-        src="image/icon_common.png"
-        alt=""
-      >
-      <div class="center-container-right-div"></div>
-      <p>发生法撒旦法是</p>
-      <p>发送到发送发送到</p> -->
 
       <nut-row
         type="flex"
@@ -91,6 +84,9 @@ export default {};
     span {
       font-size: 12px;
     }
+    .top-container-right-p{
+        color :gray;
+    }
   }
 
   .bottom-line {
@@ -103,11 +99,12 @@ export default {};
     margin-top: 5px;
     img {
       width: 50px;
-      height: 50px;
+      height: 60px;
     }
     p{
         margin: 0px;
         padding-left:10px ;
+        font-size: 10px;
     }
   }
 
@@ -115,6 +112,7 @@ export default {};
     text-align: end;
     p{
         margin: 0px;
+        font-size: 12px;
     }
   }
 }
