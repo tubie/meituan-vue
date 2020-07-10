@@ -14,14 +14,42 @@
       ></Mt9SquaresItem>
     </div>
 
+    <img
+      src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=927515568,3155617026&fm=15&gp=0.jpg"
+      alt=""
+    >
+
+    <div class="recommend-tool-container">
+
+      <p> 推荐工具</p>
+
+      <Mt9SquaresItem
+        v-for='(item , index ) in recommendToolList'
+        :key='index'
+      ></Mt9SquaresItem>
+
+    </div>
+
+    <div class="mt-mine-signItem-container">
+
+      <p> 互动签名</p>
+      <div class="mt-mine-signItem-container-sub">
+        <MtMineSignItem></MtMineSignItem>
+        <MtMineSignItem></MtMineSignItem>
+        <MtMineSignItem></MtMineSignItem>
+        <MtMineSignItem></MtMineSignItem>
+      </div>
+
+    </div>
+
   </div>
 
 </template>
 
 
 <script>
-
 import Mt9SquaresItem from "../../components/Mt9SquaresItem.vue";
+import MtMineSignItem from "../../components/MtMineSignItem.vue";
 
 export default {
   data() {
@@ -60,11 +88,13 @@ export default {
             "http://img11.360buyimg.com/uba/jfs/t27370/260/2117900302/3274/bd097e85/5bf7921bNafc526e2.jpg"
         }
       ],
-      meituanItemList:["1","2","3","4","5",],
+      meituanItemList: ["1", "2", "3", "4", "5"],
+      recommendToolList: ["1", "2", "3", "4", "5", "1", "2", "3", "4", "5"]
     };
   },
-  components:{
-      Mt9SquaresItem,
+  components: {
+    Mt9SquaresItem,
+    MtMineSignItem
   }
 };
 </script>
@@ -81,6 +111,46 @@ export default {
     display: flex;
     flex-wrap: wrap;
     //   justify-content: space-between;
+  }
+  img {
+    padding: 10px;
+    width: 100%;
+    height: 80px;
+    border-radius: 15px;
+  }
+
+  .recommend-tool-container {
+    background: white;
+    margin: 10px;
+    border-radius: 8px;
+
+    p {
+      color: black;
+      font-size: 14px;
+      font-weight: 700; //加粗
+      margin-left: 5px;
+      padding-top: 5px;
+    }
+  }
+  .mt-mine-signItem-container {
+      background: white;
+      border-radius: 10px;
+      margin: 10px;
+    p {
+      color: black;
+      font-size: 14px;
+      font-weight: 700; //加粗
+      margin-left: 5px;
+      padding-top: 5px;
+    }
+    .mt-mine-signItem-container-sub {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 }
 </style>

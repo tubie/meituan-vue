@@ -6,7 +6,7 @@
 
     <mt-header
       fixed
-      title="固定在顶部"
+      title="美团"
     ></mt-header>
 
     <transition>
