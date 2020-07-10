@@ -35,14 +35,14 @@
       </li>
     </ul> -->
 
-     <div class="waterFlowContainer-div">
+    <div class="waterFlowContainer-div">
       <MtWaterfallsFlowItem
         v-for="(item, index) in waterFlowlist"
         :key="index"
         :img_url='item.src'
+        @waterfallsFlowItemClickFun='waterfallsFlowClick'
       ></MtWaterfallsFlowItem>
     </div>
-
 
   </div>
 
@@ -67,8 +67,7 @@ export default {
       ],
       waterFlowlist: [
         {
-          src:
-            "http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          src: "http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
           title: "",
           subtitle: ""
         },
@@ -78,20 +77,7 @@ export default {
           subtitle: ""
         },
         {
-          src:
-            "http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
-          title: "",
-          subtitle: ""
-        },
-        {
-          src:
-            "http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
-          title: "",
-          subtitle: ""
-        },
-        {
-          src:
-            "http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          src: "http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
           title: "",
           subtitle: ""
         },
@@ -101,28 +87,42 @@ export default {
           subtitle: ""
         },
         {
-          src:
-            "http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          src: "http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
           title: "",
           subtitle: ""
         },
         {
-          src:
-            "http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          src: "http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          title: "",
+          subtitle: ""
+        },
+        {
+          src: "http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          title: "",
+          subtitle: ""
+        },
+        {
+          src: "http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
           title: "",
           subtitle: ""
         }
       ]
     };
   },
-  methods: {},
+  methods: {
+    waterfallsFlowClick() {
+      this.$router.push({
+          path:"commonpagedatail"
+      })
+    }
+  },
   mounted() {
     mui(".mui-scroll-wrapper").scroll({
       deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
     });
   },
-  components:{
-      MtWaterfallsFlowItem,
+  components: {
+    MtWaterfallsFlowItem
   }
 };
 </script>

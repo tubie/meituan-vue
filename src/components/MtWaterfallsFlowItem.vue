@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-waterfallsFlow-item">
+  <div class="mt-waterfallsFlow-item" @click="waterfallsFlowItemClick">
     <img
       :src='img_url'
       alt=""
@@ -21,7 +21,12 @@ export default {
             type:String,
             default:"http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg"
         }
-    }
+    },
+    methods:{
+        waterfallsFlowItemClick(){
+            this.$emit('waterfallsFlowItemClickFun');
+        }
+    },
 };
 </script>
 

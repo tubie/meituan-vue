@@ -4,7 +4,7 @@ import HomePage from "../views/tabbar/HomePage"
 import FindPage from "../views/tabbar/FindPage"
 import OrderPage from "../views/tabbar/OrderPage"
 import MinePage from "../views/tabbar/MinePage"
-
+import CommonPageDatail from "../views/commonpage/CommonPageDatail"
 
 
 Vue.use(VueRouter)
@@ -31,6 +31,12 @@ routes = [
     path:'/minepage',
     component:MinePage
   },
+  {
+    path:'/commonpagedatail',
+    component:CommonPageDatail
+  },
+
+  
 ];
 
 const router = new VueRouter({
