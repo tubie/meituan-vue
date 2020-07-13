@@ -1,7 +1,7 @@
 <template>
   <div
     class="mt-item-div"
-    :style='isFourColumns === ture ? "width:25%" :"width:20%"'
+    :style='currentStyle'
   >
     <img
       :src='imgUrl'
@@ -18,7 +18,6 @@ export default {
   props: {
     isFourColumns: {
       type: Boolean,
-      default: true
     },
     title: {
       type: String,
@@ -28,6 +27,20 @@ export default {
     imgUrl: {
       type: String,
       default: "image/icon_vip.png"
+    }
+  },
+  computed:{
+    currentStyle:function(){
+      if(this.isFourColumns === true){
+        return {
+          width:'25%'
+        }
+      }else{
+          return {
+          width:'20%'
+        }
+      }
+
     }
   }
 };

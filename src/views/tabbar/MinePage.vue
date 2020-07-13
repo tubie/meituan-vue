@@ -15,12 +15,12 @@
     <div class="mtItem-container-div">
       <div class="mtItem-container-div-subContainer">
         <Mt9SquaresItem
-        :isFourColumns='flase'
-        v-for='(item , index ) in mineTopClasSubData'
-        :key='index'
-        :title="item.title"
-        :imgUrl='item.imgUrl'
-      ></Mt9SquaresItem>
+          :isFourColumns='flase'
+          v-for='(item , index ) in mineTopClasSubData'
+          :key='index'
+          :title="item.title"
+          :imgUrl='item.imgUrl'
+        ></Mt9SquaresItem>
       </div>
     </div>
 
@@ -52,15 +52,14 @@
     <div class="recommend-tool-container">
 
       <p> 推荐工具</p>
-
       <div class="recommend-tool-subContainer">
         <Mt9SquaresItem
-        :isFourColumns='true'
-        v-for='(item , index ) in recommendToolList'
-        :key='index'
-        :imgUrl='item.imgUrl'
-        :title="item.title"
-      ></Mt9SquaresItem>
+          :isFourColumns='true'
+          v-for='(item , index ) in recommendToolList'
+          :key='index'
+          :imgUrl='item.imgUrl'
+          :title="item.title"
+        ></Mt9SquaresItem>
       </div>
 
     </div>
@@ -130,38 +129,39 @@ export default {
           imgUrl: "image/mine/icon_mine_exchange.png"
         }
       ],
-      recommendToolList: [{
-        title:"充值中心",
-        imgUrl:"",
-      },
-      {
-        title:"新个税计算",
-        imgUrl:"",
-      },
-      {
-        title:"垃圾分类",
-        imgUrl:"",
-      },
-      {
-        title:"墨迹天气",
-        imgUrl:"",
-      },
-      {
-        title:"闪付",
-        imgUrl:"",
-      },
-      {
-        title:"发票助手",
-        imgUrl:"",
-      },
-      {
-        title:"美团大学",
-        imgUrl:"",
-      },
-      {
-        title:"我要合作",
-        imgUrl:"",
-      },
+      recommendToolList: [
+        {
+          title: "充值中心",
+          imgUrl: ""
+        },
+        {
+          title: "新个税计算",
+          imgUrl: ""
+        },
+        {
+          title: "垃圾分类",
+          imgUrl: ""
+        },
+        {
+          title: "墨迹天气",
+          imgUrl: ""
+        },
+        {
+          title: "闪付",
+          imgUrl: ""
+        },
+        {
+          title: "发票助手",
+          imgUrl: ""
+        },
+        {
+          title: "美团大学",
+          imgUrl: ""
+        },
+        {
+          title: "我要合作",
+          imgUrl: ""
+        }
       ]
     };
   },
@@ -180,7 +180,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background: #F4BF42;
+    background: #f4bf42;
     margin-top: 0px;
     padding-top: 15px;
   }
@@ -192,7 +192,7 @@ export default {
     background: white;
     margin: 10px;
     border-radius: 10px;
-    .mtItem-container-div-subContainer{
+    .mtItem-container-div-subContainer {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
@@ -220,17 +220,16 @@ export default {
       margin-left: 5px;
       padding-top: 5px;
     }
-
-    .recommend-tool-subContainer{
-       width: 100%;
+    .recommend-tool-subContainer {
+      width: 100%;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       padding-left: 10px;
       padding-right: 10px;
-
     }
   }
+
   .mt-mine-signItem-container {
     background: white;
     border-radius: 10px;

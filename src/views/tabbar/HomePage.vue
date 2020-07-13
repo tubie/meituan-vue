@@ -161,10 +161,7 @@ export default {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .nut-tabbar {
-    background: rgba(244, 191, 66, 1);
-    margin-top: 0px;
-  }
+  
   .mint-swipe {
     height: 180px;
   }
