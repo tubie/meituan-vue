@@ -98,7 +98,7 @@ export default {
           imgUrl:
             "http://img5.imgtn.bdimg.com/it/u=3837875987,2852737972&fm=15&gp=0.jpg"
         },
-        { imgUrl: "http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg" },
+        { imgUrl: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594627152552&di=04c36010f872d314df0095f925ffcaea&imgtype=0&src=http%3A%2F%2Fwww.furuizhi.com%2Fupfiles%2Fimage%2F201401%2F201401071420556275.png" },
         {
           imgUrl:
             "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg"

@@ -19,6 +19,26 @@
       alt=""
     >
 
+    <div class="my-wallet-container">
+
+      <p>我的钱包</p>
+
+      <div class="my-wallet-container-center">
+
+        <MtMineWalletItem></MtMineWalletItem>
+        <MtMineWalletItem></MtMineWalletItem>
+        <MtMineWalletItem></MtMineWalletItem>
+        <MtMineWalletItem></MtMineWalletItem>
+
+      </div>
+
+      <img
+        src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=240449294,3505719360&fm=15&gp=0.jpg"
+        alt=""
+      >
+
+    </div>
+
     <div class="recommend-tool-container">
 
       <p> 推荐工具</p>
@@ -50,6 +70,7 @@
 <script>
 import Mt9SquaresItem from "../../components/Mt9SquaresItem.vue";
 import MtMineSignItem from "../../components/MtMineSignItem.vue";
+import MtMineWalletItem from "../../components/MtMineWalletItem.vue";
 
 export default {
   data() {
@@ -94,7 +115,8 @@ export default {
   },
   components: {
     Mt9SquaresItem,
-    MtMineSignItem
+    MtMineSignItem,
+    MtMineWalletItem
   }
 };
 </script>
@@ -133,9 +155,9 @@ export default {
     }
   }
   .mt-mine-signItem-container {
-      background: white;
-      border-radius: 10px;
-      margin: 10px;
+    background: white;
+    border-radius: 10px;
+    margin: 10px;
     p {
       color: black;
       font-size: 14px;
@@ -144,6 +166,29 @@ export default {
       padding-top: 5px;
     }
     .mt-mine-signItem-container-sub {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  .my-wallet-container {
+    background: white;
+    border-radius: 10px;
+    margin: 10px;
+
+    p {
+      color: black;
+      font-size: 14px;
+      font-weight: 700; //加粗
+      margin-left: 5px;
+      padding-top: 5px;
+    }
+
+    .my-wallet-container-center {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
