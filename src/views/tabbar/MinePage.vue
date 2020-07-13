@@ -2,11 +2,6 @@
 
   <div class="minepage">
 
-    <!-- <nut-tabbar
-      @tab-switch="tabSwitch1"
-      :tabbar-list="tabList1"
-    ></nut-tabbar> -->
-
     <div class="mine-top-class-item-container">
       <Mt9SquaresItem
         :isFourColumns='true'
@@ -18,10 +13,15 @@
     </div>
 
     <div class="mtItem-container-div">
-      <Mt9SquaresItem
-        v-for='(item , index ) in meituanItemList'
+      <div class="mtItem-container-div-subContainer">
+        <Mt9SquaresItem
+        :isFourColumns='flase'
+        v-for='(item , index ) in mineTopClasSubData'
         :key='index'
+        :title="item.title"
+        :imgUrl='item.imgUrl'
       ></Mt9SquaresItem>
+      </div>
     </div>
 
     <img
@@ -53,10 +53,15 @@
 
       <p> 推荐工具</p>
 
-      <Mt9SquaresItem
+      <div class="recommend-tool-subContainer">
+        <Mt9SquaresItem
+        :isFourColumns='true'
         v-for='(item , index ) in recommendToolList'
         :key='index'
+        :imgUrl='item.imgUrl'
+        :title="item.title"
       ></Mt9SquaresItem>
+      </div>
 
     </div>
 
@@ -85,7 +90,8 @@ import MtMineWalletItem from "../../components/MtMineWalletItem.vue";
 export default {
   data() {
     return {
-      mineTopClassData:[ {
+      mineTopClassData: [
+        {
           title: "收藏",
           imgUrl: "image/icon_mine_top_class_collect.png"
         },
@@ -100,9 +106,63 @@ export default {
         {
           title: "红包/卡券",
           imgUrl: "image/icon_mine_top_class_collect_coupon.png"
-        }],
-      meituanItemList: ["1", "2", "3", "4", "5"],
-      recommendToolList: ["1", "2", "3", "4", "5", "1", "2", "3", "4", "5"]
+        }
+      ],
+      mineTopClasSubData: [
+        {
+          title: "我的订单",
+          imgUrl: "image/mine/icon_mine_order.png"
+        },
+        {
+          title: "待付款",
+          imgUrl: "image/mine/icon_mine_pay.png"
+        },
+        {
+          title: "待使用",
+          imgUrl: "image/mine/icon_mine_time.png"
+        },
+        {
+          title: "待评价",
+          imgUrl: "image/mine/icon_mine_submit.png"
+        },
+        {
+          title: "退款售后",
+          imgUrl: "image/mine/icon_mine_exchange.png"
+        }
+      ],
+      recommendToolList: [{
+        title:"充值中心",
+        imgUrl:"",
+      },
+      {
+        title:"新个税计算",
+        imgUrl:"",
+      },
+      {
+        title:"垃圾分类",
+        imgUrl:"",
+      },
+      {
+        title:"墨迹天气",
+        imgUrl:"",
+      },
+      {
+        title:"闪付",
+        imgUrl:"",
+      },
+      {
+        title:"发票助手",
+        imgUrl:"",
+      },
+      {
+        title:"美团大学",
+        imgUrl:"",
+      },
+      {
+        title:"我要合作",
+        imgUrl:"",
+      },
+      ]
     };
   },
   components: {
@@ -120,7 +180,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background: rgba(244, 191, 66, 1);
+    background: #F4BF42;
     margin-top: 0px;
     padding-top: 15px;
   }
@@ -130,10 +190,17 @@ export default {
   }
   .mtItem-container-div {
     background: white;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    //   justify-content: space-between;
+    margin: 10px;
+    border-radius: 10px;
+    .mtItem-container-div-subContainer{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 10px;
+    }
   }
   img {
     padding: 10px;
@@ -146,13 +213,22 @@ export default {
     background: white;
     margin: 10px;
     border-radius: 8px;
-
     p {
       color: black;
       font-size: 14px;
       font-weight: 700; //加粗
       margin-left: 5px;
       padding-top: 5px;
+    }
+
+    .recommend-tool-subContainer{
+       width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-left: 10px;
+      padding-right: 10px;
+
     }
   }
   .mt-mine-signItem-container {
