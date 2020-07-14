@@ -68,19 +68,19 @@ export default {
       homeTopClassData: [
         {
           title: "扫一扫",
-          imageUrl: ""
+          imgUrl: "image/home/icon_home_top_scan.png"
         },
         {
           title: "付款码",
-          imageUrl: ""
+          imgUrl: "image/home/icon_home_top_pay.png"
         },
         {
           title: "红包/卡券",
-          imageUrl: ""
+          imgUrl: "image/home/icon_home_top_coupon.png"
         },
         {
           title: "骑车",
-          imageUrl: ""
+          imgUrl: "image/home/icon_home_top_drive.png"
         }
       ],
       swipeList: [

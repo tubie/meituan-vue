@@ -10,18 +10,18 @@
 
         <nut-col span="3">
           <img
-            src="image/icon_common.png"
+            :src="topIconUrl"
             alt=""
           >
         </nut-col>
 
         <nut-col span="17">
-          <span>按时缴费；劳动发斯蒂芬</span>
+          <span>{{topTitle}}</span>
 
         </nut-col>
 
         <nut-col span="4">
-          <span class="top-container-right-p">已完成</span>
+          <span class="top-container-right-p">{{topSubTitle}}</span>
 
         </nut-col>
 
@@ -42,15 +42,15 @@
 
         <nut-col span="4">
           <img
-            src="http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg"
+            :src="bottomImgUrl"
             alt=""
           >
         </nut-col>
 
         <nut-col span="20">
-          <p>发生法撒旦法是</p>
-          <p>发送到发送发送到</p>
-          <p>发送到发送发送到</p>
+          <p>{{bottomTopTitle}}</p>
+          <p>{{bottomCenterTitle}}</p>
+          <p>{{bottomBottomTitle}}</p>
 
         </nut-col>
 
@@ -59,14 +59,51 @@
     </div>
 
     <div class="bottom-container">
-      <p>再来一单</p>
+      <p>{{rightTitle}}</p>
     </div>
 
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props:{
+    topIconUrl:{
+      type:String,
+      default:""
+    },
+    topTitle:{
+      type:String,
+      default:""
+    },
+    topSubTitle:{
+      type:String,
+      default:""
+    },
+    bottomImgUrl:{
+      type:String,
+      default:""
+    },
+    bottomTopTitle:{
+      type:String,
+      default:""
+    },
+    bottomCenterTitle:{
+      type:String,
+      default:""
+    },
+    bottomBottomTitle:{
+      type:String,
+      default:""
+    },
+    rightTitle:{
+      type:String,
+      default:""
+    },
+  }
+
+
+};
 </script>
 
 <style lang="scss" scoped>

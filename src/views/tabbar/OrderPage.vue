@@ -44,8 +44,18 @@
    </div>
 
 
-   <div class="mt-orderAllItem-container" v-for="(item ,index) in titleList" :key="index"> 
-       <MtOrderAllItem></MtOrderAllItem>
+   <div class="mt-orderAllItem-container" v-for="(item ,index) in orderListData" :key="index"> 
+       <MtOrderAllItem
+       :topIconUrl='item.topIconUrl'
+       :topTitle='item.topTitle'
+       :topSubTitle='item.topSubTitle'
+       :bottomImgUrl='item.bottomImgUrl'
+       :bottomTopTitle='item.bottomTopTitle'
+       :bottomCenterTitle='item.bottomCenterTitle'
+       :bottomBottomTitle='item.bottomBottomTitle'
+       :rightTitle='item.rightTitle'
+       :key="index"
+       ></MtOrderAllItem>
    </div>
 
 
@@ -73,13 +83,11 @@ export default {
   data() {
     return {
       titleList: [
-        "测试1",
-        "测试2",
-        "测试3",
-        "测试4",
-        "测试5",
-        "测试6",
-        "测试7"
+        "全部",
+        "待付款",
+        "待使用",
+        "待评价",
+        "退款/售后",
       ],
       swipeList: [
         {
@@ -133,6 +141,129 @@ export default {
           title: "",
           subtitle: ""
         }
+      ],
+      orderListData:[
+        {
+          topIconUrl:"image/icon_common.png",
+          topTitle:"魔法门VR(南京东路店)",
+          topSubTitle:"已消费",
+
+          bottomImgUrl:"http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          bottomTopTitle:"预定时间：2020-06-26 13:00",
+          bottomCenterTitle:"VR游戏任选1小时",
+          bottomBottomTitle:"总价：248.00",
+          rightTitle:"再来一单",
+        },
+
+        {
+          topIconUrl:"image/icon_common.png",
+          topTitle:"魔法门VR(南京东路店)",
+          topSubTitle:"已消费",
+
+          bottomImgUrl:"http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          bottomTopTitle:"预定时间：2020-06-26 13:00",
+          bottomCenterTitle:"VR游戏任选1小时",
+          bottomBottomTitle:"总价：248.00",
+          rightTitle:"再来一单",
+        },
+
+        {
+          topIconUrl:"image/icon_common.png",
+          topTitle:"魔法门VR(南京东路店)",
+          topSubTitle:"已消费",
+
+          bottomImgUrl:"http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          bottomTopTitle:"预定时间：2020-06-26 13:00",
+          bottomCenterTitle:"VR游戏任选1小时",
+          bottomBottomTitle:"总价：248.00",
+          rightTitle:"再来一单",
+        },
+
+        {
+          topIconUrl:"image/icon_common.png",
+          topTitle:"魔法门VR(南京东路店)",
+          topSubTitle:"已消费",
+
+          bottomImgUrl:"http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          bottomTopTitle:"预定时间：2020-06-26 13:00",
+          bottomCenterTitle:"VR游戏任选1小时",
+          bottomBottomTitle:"总价：248.00",
+          rightTitle:"再来一单",
+        },
+
+        {
+          topIconUrl:"image/icon_common.png",
+          topTitle:"魔法门VR(南京东路店)",
+          topSubTitle:"已消费",
+
+          bottomImgUrl:"http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          bottomTopTitle:"预定时间：2020-06-26 13:00",
+          bottomCenterTitle:"VR游戏任选1小时",
+          bottomBottomTitle:"总价：248.00",
+          rightTitle:"再来一单",
+        },
+
+        {
+          topIconUrl:"image/icon_common.png",
+          topTitle:"魔法门VR(南京东路店)",
+          topSubTitle:"已消费",
+
+          bottomImgUrl:"http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          bottomTopTitle:"预定时间：2020-06-26 13:00",
+          bottomCenterTitle:"VR游戏任选1小时",
+          bottomBottomTitle:"总价：248.00",
+          rightTitle:"再来一单",
+        },
+
+        {
+          topIconUrl:"image/icon_common.png",
+          topTitle:"魔法门VR(南京东路店)",
+          topSubTitle:"已消费",
+
+          bottomImgUrl:"http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          bottomTopTitle:"预定时间：2020-06-26 13:00",
+          bottomCenterTitle:"VR游戏任选1小时",
+          bottomBottomTitle:"总价：248.00",
+          rightTitle:"再来一单",
+        },
+
+        {
+          topIconUrl:"image/icon_common.png",
+          topTitle:"魔法门VR(南京东路店)",
+          topSubTitle:"已消费",
+
+          bottomImgUrl:"http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          bottomTopTitle:"预定时间：2020-06-26 13:00",
+          bottomCenterTitle:"VR游戏任选1小时",
+          bottomBottomTitle:"总价：248.00",
+          rightTitle:"再来一单",
+        },
+
+        {
+          topIconUrl:"image/icon_common.png",
+          topTitle:"魔法门VR(南京东路店)",
+          topSubTitle:"已消费",
+
+          bottomImgUrl:"http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          bottomTopTitle:"预定时间：2020-06-26 13:00",
+          bottomCenterTitle:"VR游戏任选1小时",
+          bottomBottomTitle:"总价：248.00",
+          rightTitle:"再来一单",
+        },
+
+        {
+          topIconUrl:"image/icon_common.png",
+          topTitle:"魔法门VR(南京东路店)",
+          topSubTitle:"已消费",
+
+          bottomImgUrl:"http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          bottomTopTitle:"预定时间：2020-06-26 13:00",
+          bottomCenterTitle:"VR游戏任选1小时",
+          bottomBottomTitle:"总价：248.00",
+          rightTitle:"再来一单",
+        },
+
+         
       ]
     };
   },
