@@ -26,6 +26,12 @@ import './lib/mui/css/mui.min.css'
 import './lib/mui/css/icons-extra.css'
 
 
+import VuePreview from 'vue-preview'
+// defalut install
+Vue.use(VuePreview)
+
+
+
 import { Base64 } from 'js-base64';
 Vue.use(Base64);
 

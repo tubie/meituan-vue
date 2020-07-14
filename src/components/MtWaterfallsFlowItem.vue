@@ -64,7 +64,7 @@ export default {
 
   img[lazy="loading"] {
     width: 40px;
-    height: 300px;
+    height: 80px;
     margin: auto;
   }
   .mt-waterfallsFlow-bottom-container-div {
