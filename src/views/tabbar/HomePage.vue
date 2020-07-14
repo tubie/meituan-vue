@@ -52,6 +52,11 @@
       <MtWaterfallsFlowItem
         v-for="(item, index) in waterFlowlist"
         :key="index"
+        :firstText='item.firstText'
+        :secondText='item.secondText'
+        :thirdText='item.thirdText'
+        :fourText='item.fourText'
+        :imgUrl='item.imgUrl'
       ></MtWaterfallsFlowItem>
     </div>
 
@@ -109,36 +114,150 @@ export default {
         { imgUrl: "image/home/icon_home_class_uppay.png", title: "充值中心" },
         { imgUrl: "image/home/icon_home_class_beautify.png", title: "丽人" },
         { imgUrl: "image/home/icon_home_class_money.png", title: "省钱专区" },
-        { imgUrl: "image/home/icon_home_class_trainticket.png", title: "火车票/机票" },
+        {
+          imgUrl: "image/home/icon_home_class_trainticket.png",
+          title: "火车票/机票"
+        },
         { imgUrl: "image/home/icon_home_class_fruit.png", title: "免费领水果" },
-        { imgUrl: "image/home/icon_home_class_kangaroo.png", title: "袋鼠快跑" },
+        {
+          imgUrl: "image/home/icon_home_class_kangaroo.png",
+          title: "袋鼠快跑"
+        },
         { imgUrl: "image/home/icon_home_class_coupon.png", title: "红包签到" },
         { imgUrl: "image/home/icon_home_class_hear.png", title: "美发" },
         { imgUrl: "image/home/icon_home_class_house.png", title: "超市酒店" }
       ],
       waterFlowlist: [
-        "1",
-        "2",
-        "3",
-        "2",
-        "3",
-        "2",
-        "3",
-        "2",
-        "3",
-        "2",
-        "3",
-        "2",
-        "3",
-        "2",
-        "3",
-        "2",
-        "3",
-        "2",
-        "3",
-        "2"
+        {
+          imgUrl:
+            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594718927675&di=21f6560b7420e6c24b3e345e0a2c49be&imgtype=0&src=http%3A%2F%2Fpic197.nipic.com%2Ffile%2F20181217%2F26823374_215857549000_2.jpg",
+          firstText: "汉堡王",
+          secondText: "4.6分",
+          thirdText: "满5减3",
+          fourText: "人均￥13|月销999"
+        },
+        {
+          imgUrl:
+            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594718927675&di=21f6560b7420e6c24b3e345e0a2c49be&imgtype=0&src=http%3A%2F%2Fpic197.nipic.com%2Ffile%2F20181217%2F26823374_215857549000_2.jpg",
+          firstText: "汉堡王",
+          secondText: "4.6分",
+          thirdText: "满5减3",
+          fourText: "人均￥13|月销999"
+        },
+        {
+          imgUrl:
+            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594718927675&di=21f6560b7420e6c24b3e345e0a2c49be&imgtype=0&src=http%3A%2F%2Fpic197.nipic.com%2Ffile%2F20181217%2F26823374_215857549000_2.jpg",
+          firstText: "汉堡王",
+          secondText: "4.6分",
+          thirdText: "满5减3",
+          fourText: "人均￥13|月销999"
+        },
+        {
+          imgUrl:
+            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594718927675&di=21f6560b7420e6c24b3e345e0a2c49be&imgtype=0&src=http%3A%2F%2Fpic197.nipic.com%2Ffile%2F20181217%2F26823374_215857549000_2.jpg",
+          firstText: "汉堡王",
+          secondText: "4.6分",
+          thirdText: "满5减3",
+          fourText: "人均￥13|月销999"
+        },
+        {
+          imgUrl:
+            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594718927675&di=21f6560b7420e6c24b3e345e0a2c49be&imgtype=0&src=http%3A%2F%2Fpic197.nipic.com%2Ffile%2F20181217%2F26823374_215857549000_2.jpg",
+          firstText: "汉堡王",
+          secondText: "4.6分",
+          thirdText: "满5减3",
+          fourText: "人均￥13|月销999"
+        },
+        {
+          imgUrl:
+            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594718927675&di=21f6560b7420e6c24b3e345e0a2c49be&imgtype=0&src=http%3A%2F%2Fpic197.nipic.com%2Ffile%2F20181217%2F26823374_215857549000_2.jpg",
+          firstText: "汉堡王",
+          secondText: "4.6分",
+          thirdText: "满5减3",
+          fourText: "人均￥13|月销999"
+        },
+        {
+          imgUrl:
+            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594718927675&di=21f6560b7420e6c24b3e345e0a2c49be&imgtype=0&src=http%3A%2F%2Fpic197.nipic.com%2Ffile%2F20181217%2F26823374_215857549000_2.jpg",
+          firstText: "汉堡王",
+          secondText: "4.6分",
+          thirdText: "满5减3",
+          fourText: "人均￥13|月销999"
+        },
+        {
+          imgUrl:
+            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594718927675&di=21f6560b7420e6c24b3e345e0a2c49be&imgtype=0&src=http%3A%2F%2Fpic197.nipic.com%2Ffile%2F20181217%2F26823374_215857549000_2.jpg",
+          firstText: "汉堡王",
+          secondText: "4.6分",
+          thirdText: "满5减3",
+          fourText: "人均￥13|月销999"
+        },
+        {
+          imgUrl:
+            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594718927675&di=21f6560b7420e6c24b3e345e0a2c49be&imgtype=0&src=http%3A%2F%2Fpic197.nipic.com%2Ffile%2F20181217%2F26823374_215857549000_2.jpg",
+          firstText: "汉堡王",
+          secondText: "4.6分",
+          thirdText: "满5减3",
+          fourText: "人均￥13|月销999"
+        },
+        {
+          imgUrl:
+            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594718927675&di=21f6560b7420e6c24b3e345e0a2c49be&imgtype=0&src=http%3A%2F%2Fpic197.nipic.com%2Ffile%2F20181217%2F26823374_215857549000_2.jpg",
+          firstText: "汉堡王",
+          secondText: "4.6分",
+          thirdText: "满5减3",
+          fourText: "人均￥13|月销999"
+        },
+        {
+          imgUrl:
+            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594718927675&di=21f6560b7420e6c24b3e345e0a2c49be&imgtype=0&src=http%3A%2F%2Fpic197.nipic.com%2Ffile%2F20181217%2F26823374_215857549000_2.jpg",
+          firstText: "汉堡王",
+          secondText: "4.6分",
+          thirdText: "满5减3",
+          fourText: "人均￥13|月销999"
+        },
+        {
+          imgUrl:
+            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594718927675&di=21f6560b7420e6c24b3e345e0a2c49be&imgtype=0&src=http%3A%2F%2Fpic197.nipic.com%2Ffile%2F20181217%2F26823374_215857549000_2.jpg",
+          firstText: "汉堡王",
+          secondText: "4.6分",
+          thirdText: "满5减3",
+          fourText: "人均￥13|月销999"
+        },
+        {
+          imgUrl:
+            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594718927675&di=21f6560b7420e6c24b3e345e0a2c49be&imgtype=0&src=http%3A%2F%2Fpic197.nipic.com%2Ffile%2F20181217%2F26823374_215857549000_2.jpg",
+          firstText: "汉堡王",
+          secondText: "4.6分",
+          thirdText: "满5减3",
+          fourText: "人均￥13|月销999"
+        },
+        {
+          imgUrl:
+            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594718927675&di=21f6560b7420e6c24b3e345e0a2c49be&imgtype=0&src=http%3A%2F%2Fpic197.nipic.com%2Ffile%2F20181217%2F26823374_215857549000_2.jpg",
+          firstText: "汉堡王",
+          secondText: "4.6分",
+          thirdText: "满5减3",
+          fourText: "人均￥13|月销999"
+        },
+        {
+          imgUrl:
+            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594718927675&di=21f6560b7420e6c24b3e345e0a2c49be&imgtype=0&src=http%3A%2F%2Fpic197.nipic.com%2Ffile%2F20181217%2F26823374_215857549000_2.jpg",
+          firstText: "汉堡王",
+          secondText: "4.6分",
+          thirdText: "满5减3",
+          fourText: "人均￥13|月销999"
+        },
+        {
+          imgUrl:
+            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594718927675&di=21f6560b7420e6c24b3e345e0a2c49be&imgtype=0&src=http%3A%2F%2Fpic197.nipic.com%2Ffile%2F20181217%2F26823374_215857549000_2.jpg",
+          firstText: "汉堡王",
+          secondText: "4.6分",
+          thirdText: "满5减3",
+          fourText: "人均￥13|月销999"
+        },
+         
       ],
-      mt9SquaresItemPages: ["1", "2", "3"]
     };
   },
   methods: {
@@ -179,8 +298,8 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   .mint-swipe {
     padding: 10px;

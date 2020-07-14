@@ -1,40 +1,82 @@
 <template>
-  <div class="mt-waterfallsFlow-item" @click="waterfallsFlowItemClick">
+  <div
+    class="mt-waterfallsFlow-item"
+    @click="waterfallsFlowItemClick"
+  >
     <img
-      :src='img_url'
+      :src='imgUrl'
       alt=""
     >
     <div class="mt-waterfallsFlow-bottom-container-div">
-        <p>东方明珠广播电视塔</p>
-    <p>姥姥家的小区</p>
-    <p>10块钱按</p>
-    <p>已售90000份</p>
+      <p class="mt-waterfallsFlow-bottom-firstText">{{firstText}}</p>
+      <p class="mt-waterfallsFlow-bottom-secondText">{{secondText}}</p>
+      <p class="mt-waterfallsFlow-bottom-thirdText">{{thirdText}}</p>
+      <p class="mt-waterfallsFlow-bottom-fourText">{{fourText}}</p>
     </div>
 
   </div>
 </template>
 
+
 <script>
 export default {
-    props:{
-        img_url:{
-            type:String,
-            default:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594627152552&di=04c36010f872d314df0095f925ffcaea&imgtype=0&src=http%3A%2F%2Fwww.furuizhi.com%2Fupfiles%2Fimage%2F201401%2F201401071420556275.png"
-        }
+  props: {
+    imgUrl: {
+      type: String,
+      default: ""
     },
-    methods:{
-        waterfallsFlowItemClick(){
-            this.$emit('waterfallsFlowItemClickFun');
-        }
+    firstText: {
+      type: String,
+      default: ""
     },
+    secondText: {
+      type: String,
+      default: ""
+    },
+    thirdText: {
+      type: String,
+      default: ""
+    },
+    fourText: {
+      type: String,
+      default: ""
+    }
+  },
+  methods: {
+    waterfallsFlowItemClick() {
+      this.$emit("waterfallsFlowItemClickFun");
+    }
+  }
 };
 </script>
 
 <style lang="scss">
 .mt-waterfallsFlow-item {
+  padding: 5px;
   width: 49%;
-  .mt-waterfallsFlow-bottom-container-div{
-      background: white;
+  p {
+    margin: 0px;
+  }
+  .mt-waterfallsFlow-bottom-container-div {
+    background: white;
+    .mt-waterfallsFlow-bottom-firstText {
+      font-size: 16;
+      font-weight: 700;
+      color: black;
+    }
+    .mt-waterfallsFlow-bottom-secondText {
+      color: red;
+      font-size: 10px;
+    }
+
+    .mt-waterfallsFlow-bottom-thirdText {
+      color: red;
+      font-size: 10px;
+    }
+    .mt-waterfallsFlow-bottom-fourText {
+      color: gray;
+      font-size: 2px;
+    }
   }
 }
 </style>>
