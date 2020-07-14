@@ -148,7 +148,7 @@ export default {
           topTitle:"魔法门VR(南京东路店)",
           topSubTitle:"已消费",
 
-          bottomImgUrl:"http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          bottomImgUrl:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594721236739&di=b74f4aa9ad189a8fc37f7cc6f58f7184&imgtype=0&src=http%3A%2F%2Fwww.shang360.com%2Fupload%2Farticle%2F20170525%2F49602448841495693969.jpg",
           bottomTopTitle:"预定时间：2020-06-26 13:00",
           bottomCenterTitle:"VR游戏任选1小时",
           bottomBottomTitle:"总价：248.00",
@@ -160,7 +160,19 @@ export default {
           topTitle:"魔法门VR(南京东路店)",
           topSubTitle:"已消费",
 
-          bottomImgUrl:"http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          bottomImgUrl:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594721236739&di=b74f4aa9ad189a8fc37f7cc6f58f7184&imgtype=0&src=http%3A%2F%2Fwww.shang360.com%2Fupload%2Farticle%2F20170525%2F49602448841495693969.jpg",
+          bottomTopTitle:"预定时间：2020-06-26 13:00",
+          bottomCenterTitle:"VR游戏任选1小时",
+          bottomBottomTitle:"总价：248.00",
+          rightTitle:"再来一单",
+        },
+
+           {
+          topIconUrl:"image/icon_common.png",
+          topTitle:"魔法门VR(南京东路店)",
+          topSubTitle:"已消费",
+
+          bottomImgUrl:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594721236739&di=b74f4aa9ad189a8fc37f7cc6f58f7184&imgtype=0&src=http%3A%2F%2Fwww.shang360.com%2Fupload%2Farticle%2F20170525%2F49602448841495693969.jpg",
           bottomTopTitle:"预定时间：2020-06-26 13:00",
           bottomCenterTitle:"VR游戏任选1小时",
           bottomBottomTitle:"总价：248.00",
@@ -172,7 +184,18 @@ export default {
           topTitle:"魔法门VR(南京东路店)",
           topSubTitle:"已消费",
 
-          bottomImgUrl:"http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          bottomImgUrl:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594721236739&di=b74f4aa9ad189a8fc37f7cc6f58f7184&imgtype=0&src=http%3A%2F%2Fwww.shang360.com%2Fupload%2Farticle%2F20170525%2F49602448841495693969.jpg",
+          bottomTopTitle:"预定时间：2020-06-26 13:00",
+          bottomCenterTitle:"VR游戏任选1小时",
+          bottomBottomTitle:"总价：248.00",
+          rightTitle:"再来一单",
+        },
+           {
+          topIconUrl:"image/icon_common.png",
+          topTitle:"魔法门VR(南京东路店)",
+          topSubTitle:"已消费",
+
+          bottomImgUrl:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594721236739&di=b74f4aa9ad189a8fc37f7cc6f58f7184&imgtype=0&src=http%3A%2F%2Fwww.shang360.com%2Fupload%2Farticle%2F20170525%2F49602448841495693969.jpg",
           bottomTopTitle:"预定时间：2020-06-26 13:00",
           bottomCenterTitle:"VR游戏任选1小时",
           bottomBottomTitle:"总价：248.00",
@@ -184,7 +207,18 @@ export default {
           topTitle:"魔法门VR(南京东路店)",
           topSubTitle:"已消费",
 
-          bottomImgUrl:"http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          bottomImgUrl:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594721236739&di=b74f4aa9ad189a8fc37f7cc6f58f7184&imgtype=0&src=http%3A%2F%2Fwww.shang360.com%2Fupload%2Farticle%2F20170525%2F49602448841495693969.jpg",
+          bottomTopTitle:"预定时间：2020-06-26 13:00",
+          bottomCenterTitle:"VR游戏任选1小时",
+          bottomBottomTitle:"总价：248.00",
+          rightTitle:"再来一单",
+        },
+           {
+          topIconUrl:"image/icon_common.png",
+          topTitle:"魔法门VR(南京东路店)",
+          topSubTitle:"已消费",
+
+          bottomImgUrl:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594721236739&di=b74f4aa9ad189a8fc37f7cc6f58f7184&imgtype=0&src=http%3A%2F%2Fwww.shang360.com%2Fupload%2Farticle%2F20170525%2F49602448841495693969.jpg",
           bottomTopTitle:"预定时间：2020-06-26 13:00",
           bottomCenterTitle:"VR游戏任选1小时",
           bottomBottomTitle:"总价：248.00",
@@ -196,7 +230,18 @@ export default {
           topTitle:"魔法门VR(南京东路店)",
           topSubTitle:"已消费",
 
-          bottomImgUrl:"http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          bottomImgUrl:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594721236739&di=b74f4aa9ad189a8fc37f7cc6f58f7184&imgtype=0&src=http%3A%2F%2Fwww.shang360.com%2Fupload%2Farticle%2F20170525%2F49602448841495693969.jpg",
+          bottomTopTitle:"预定时间：2020-06-26 13:00",
+          bottomCenterTitle:"VR游戏任选1小时",
+          bottomBottomTitle:"总价：248.00",
+          rightTitle:"再来一单",
+        },
+           {
+          topIconUrl:"image/icon_common.png",
+          topTitle:"魔法门VR(南京东路店)",
+          topSubTitle:"已消费",
+
+          bottomImgUrl:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594721236739&di=b74f4aa9ad189a8fc37f7cc6f58f7184&imgtype=0&src=http%3A%2F%2Fwww.shang360.com%2Fupload%2Farticle%2F20170525%2F49602448841495693969.jpg",
           bottomTopTitle:"预定时间：2020-06-26 13:00",
           bottomCenterTitle:"VR游戏任选1小时",
           bottomBottomTitle:"总价：248.00",
@@ -208,7 +253,18 @@ export default {
           topTitle:"魔法门VR(南京东路店)",
           topSubTitle:"已消费",
 
-          bottomImgUrl:"http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          bottomImgUrl:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594721236739&di=b74f4aa9ad189a8fc37f7cc6f58f7184&imgtype=0&src=http%3A%2F%2Fwww.shang360.com%2Fupload%2Farticle%2F20170525%2F49602448841495693969.jpg",
+          bottomTopTitle:"预定时间：2020-06-26 13:00",
+          bottomCenterTitle:"VR游戏任选1小时",
+          bottomBottomTitle:"总价：248.00",
+          rightTitle:"再来一单",
+        },
+           {
+          topIconUrl:"image/icon_common.png",
+          topTitle:"魔法门VR(南京东路店)",
+          topSubTitle:"已消费",
+
+          bottomImgUrl:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594721236739&di=b74f4aa9ad189a8fc37f7cc6f58f7184&imgtype=0&src=http%3A%2F%2Fwww.shang360.com%2Fupload%2Farticle%2F20170525%2F49602448841495693969.jpg",
           bottomTopTitle:"预定时间：2020-06-26 13:00",
           bottomCenterTitle:"VR游戏任选1小时",
           bottomBottomTitle:"总价：248.00",
@@ -220,7 +276,18 @@ export default {
           topTitle:"魔法门VR(南京东路店)",
           topSubTitle:"已消费",
 
-          bottomImgUrl:"http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          bottomImgUrl:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594721236739&di=b74f4aa9ad189a8fc37f7cc6f58f7184&imgtype=0&src=http%3A%2F%2Fwww.shang360.com%2Fupload%2Farticle%2F20170525%2F49602448841495693969.jpg",
+          bottomTopTitle:"预定时间：2020-06-26 13:00",
+          bottomCenterTitle:"VR游戏任选1小时",
+          bottomBottomTitle:"总价：248.00",
+          rightTitle:"再来一单",
+        },
+           {
+          topIconUrl:"image/icon_common.png",
+          topTitle:"魔法门VR(南京东路店)",
+          topSubTitle:"已消费",
+
+          bottomImgUrl:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594721236739&di=b74f4aa9ad189a8fc37f7cc6f58f7184&imgtype=0&src=http%3A%2F%2Fwww.shang360.com%2Fupload%2Farticle%2F20170525%2F49602448841495693969.jpg",
           bottomTopTitle:"预定时间：2020-06-26 13:00",
           bottomCenterTitle:"VR游戏任选1小时",
           bottomBottomTitle:"总价：248.00",
@@ -232,7 +299,18 @@ export default {
           topTitle:"魔法门VR(南京东路店)",
           topSubTitle:"已消费",
 
-          bottomImgUrl:"http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          bottomImgUrl:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594721236739&di=b74f4aa9ad189a8fc37f7cc6f58f7184&imgtype=0&src=http%3A%2F%2Fwww.shang360.com%2Fupload%2Farticle%2F20170525%2F49602448841495693969.jpg",
+          bottomTopTitle:"预定时间：2020-06-26 13:00",
+          bottomCenterTitle:"VR游戏任选1小时",
+          bottomBottomTitle:"总价：248.00",
+          rightTitle:"再来一单",
+        },
+           {
+          topIconUrl:"image/icon_common.png",
+          topTitle:"魔法门VR(南京东路店)",
+          topSubTitle:"已消费",
+
+          bottomImgUrl:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594721236739&di=b74f4aa9ad189a8fc37f7cc6f58f7184&imgtype=0&src=http%3A%2F%2Fwww.shang360.com%2Fupload%2Farticle%2F20170525%2F49602448841495693969.jpg",
           bottomTopTitle:"预定时间：2020-06-26 13:00",
           bottomCenterTitle:"VR游戏任选1小时",
           bottomBottomTitle:"总价：248.00",
@@ -244,7 +322,18 @@ export default {
           topTitle:"魔法门VR(南京东路店)",
           topSubTitle:"已消费",
 
-          bottomImgUrl:"http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          bottomImgUrl:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594721236739&di=b74f4aa9ad189a8fc37f7cc6f58f7184&imgtype=0&src=http%3A%2F%2Fwww.shang360.com%2Fupload%2Farticle%2F20170525%2F49602448841495693969.jpg",
+          bottomTopTitle:"预定时间：2020-06-26 13:00",
+          bottomCenterTitle:"VR游戏任选1小时",
+          bottomBottomTitle:"总价：248.00",
+          rightTitle:"再来一单",
+        },
+           {
+          topIconUrl:"image/icon_common.png",
+          topTitle:"魔法门VR(南京东路店)",
+          topSubTitle:"已消费",
+
+          bottomImgUrl:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594721236739&di=b74f4aa9ad189a8fc37f7cc6f58f7184&imgtype=0&src=http%3A%2F%2Fwww.shang360.com%2Fupload%2Farticle%2F20170525%2F49602448841495693969.jpg",
           bottomTopTitle:"预定时间：2020-06-26 13:00",
           bottomCenterTitle:"VR游戏任选1小时",
           bottomBottomTitle:"总价：248.00",
@@ -256,7 +345,76 @@ export default {
           topTitle:"魔法门VR(南京东路店)",
           topSubTitle:"已消费",
 
-          bottomImgUrl:"http://www.sotu.cc/d/file/gqmn/2019-10-31/00127989.jpg",
+          bottomImgUrl:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594721236739&di=b74f4aa9ad189a8fc37f7cc6f58f7184&imgtype=0&src=http%3A%2F%2Fwww.shang360.com%2Fupload%2Farticle%2F20170525%2F49602448841495693969.jpg",
+          bottomTopTitle:"预定时间：2020-06-26 13:00",
+          bottomCenterTitle:"VR游戏任选1小时",
+          bottomBottomTitle:"总价：248.00",
+          rightTitle:"再来一单",
+        },
+           {
+          topIconUrl:"image/icon_common.png",
+          topTitle:"魔法门VR(南京东路店)",
+          topSubTitle:"已消费",
+
+          bottomImgUrl:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594721236739&di=b74f4aa9ad189a8fc37f7cc6f58f7184&imgtype=0&src=http%3A%2F%2Fwww.shang360.com%2Fupload%2Farticle%2F20170525%2F49602448841495693969.jpg",
+          bottomTopTitle:"预定时间：2020-06-26 13:00",
+          bottomCenterTitle:"VR游戏任选1小时",
+          bottomBottomTitle:"总价：248.00",
+          rightTitle:"再来一单",
+        },
+
+        {
+          topIconUrl:"image/icon_common.png",
+          topTitle:"魔法门VR(南京东路店)",
+          topSubTitle:"已消费",
+
+          bottomImgUrl:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594721236739&di=b74f4aa9ad189a8fc37f7cc6f58f7184&imgtype=0&src=http%3A%2F%2Fwww.shang360.com%2Fupload%2Farticle%2F20170525%2F49602448841495693969.jpg",
+          bottomTopTitle:"预定时间：2020-06-26 13:00",
+          bottomCenterTitle:"VR游戏任选1小时",
+          bottomBottomTitle:"总价：248.00",
+          rightTitle:"再来一单",
+        },
+           {
+          topIconUrl:"image/icon_common.png",
+          topTitle:"魔法门VR(南京东路店)",
+          topSubTitle:"已消费",
+
+          bottomImgUrl:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594721236739&di=b74f4aa9ad189a8fc37f7cc6f58f7184&imgtype=0&src=http%3A%2F%2Fwww.shang360.com%2Fupload%2Farticle%2F20170525%2F49602448841495693969.jpg",
+          bottomTopTitle:"预定时间：2020-06-26 13:00",
+          bottomCenterTitle:"VR游戏任选1小时",
+          bottomBottomTitle:"总价：248.00",
+          rightTitle:"再来一单",
+        },
+
+        {
+          topIconUrl:"image/icon_common.png",
+          topTitle:"魔法门VR(南京东路店)",
+          topSubTitle:"已消费",
+
+          bottomImgUrl:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594721236739&di=b74f4aa9ad189a8fc37f7cc6f58f7184&imgtype=0&src=http%3A%2F%2Fwww.shang360.com%2Fupload%2Farticle%2F20170525%2F49602448841495693969.jpg",
+          bottomTopTitle:"预定时间：2020-06-26 13:00",
+          bottomCenterTitle:"VR游戏任选1小时",
+          bottomBottomTitle:"总价：248.00",
+          rightTitle:"再来一单",
+        },
+           {
+          topIconUrl:"image/icon_common.png",
+          topTitle:"魔法门VR(南京东路店)",
+          topSubTitle:"已消费",
+
+          bottomImgUrl:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594721236739&di=b74f4aa9ad189a8fc37f7cc6f58f7184&imgtype=0&src=http%3A%2F%2Fwww.shang360.com%2Fupload%2Farticle%2F20170525%2F49602448841495693969.jpg",
+          bottomTopTitle:"预定时间：2020-06-26 13:00",
+          bottomCenterTitle:"VR游戏任选1小时",
+          bottomBottomTitle:"总价：248.00",
+          rightTitle:"再来一单",
+        },
+
+        {
+          topIconUrl:"image/icon_common.png",
+          topTitle:"魔法门VR(南京东路店)",
+          topSubTitle:"已消费",
+
+          bottomImgUrl:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594721236739&di=b74f4aa9ad189a8fc37f7cc6f58f7184&imgtype=0&src=http%3A%2F%2Fwww.shang360.com%2Fupload%2Farticle%2F20170525%2F49602448841495693969.jpg",
           bottomTopTitle:"预定时间：2020-06-26 13:00",
           bottomCenterTitle:"VR游戏任选1小时",
           bottomBottomTitle:"总价：248.00",

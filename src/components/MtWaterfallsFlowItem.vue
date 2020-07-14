@@ -54,8 +54,10 @@ export default {
 .mt-waterfallsFlow-item {
   padding: 5px;
   width: 49%;
+  border-radius: 10px;
   p {
     margin: 0px;
+    margin-left: 5px;
   }
   .mt-waterfallsFlow-bottom-container-div {
     background: white;

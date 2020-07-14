@@ -39,7 +39,11 @@
       <MtWaterfallsFlowItem
         v-for="(item, index) in waterFlowlist"
         :key="index"
-        :img_url='item.src'
+         :firstText='item.firstText'
+        :secondText='item.secondText'
+        :thirdText='item.thirdText'
+        :fourText='item.fourText'
+        :imgUrl='item.imgUrl'
         @waterfallsFlowItemClickFun='waterfallsFlowClick'
       ></MtWaterfallsFlowItem>
     </div>
@@ -71,56 +75,177 @@ export default {
         "宠物",
         "医美"
       ],
-      waterFlowlist: [
+       waterFlowlist: [
         {
-          src:
-            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594627152552&di=04c36010f872d314df0095f925ffcaea&imgtype=0&src=http%3A%2F%2Fwww.furuizhi.com%2Fupfiles%2Fimage%2F201401%2F201401071420556275.png",
-          title: "",
-          subtitle: ""
+          imgUrl:
+            "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg",
+          firstText: "大漂亮",
+          secondText: "9.6分",
+        },
+          {
+          imgUrl:
+            "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg",
+          firstText: "大漂亮",
+          secondText: "9.6分",
+        },
+          {
+          imgUrl:
+            "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg",
+          firstText: "大漂亮",
+          secondText: "9.6分",
+        },
+         {
+          imgUrl:
+            "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg",
+          firstText: "大漂亮",
+          secondText: "9.6分",
+        },
+         {
+          imgUrl:
+            "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg",
+          firstText: "大漂亮",
+          secondText: "9.6分",
+        },
+         {
+          imgUrl:
+            "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg",
+          firstText: "大漂亮",
+          secondText: "9.6分",
+        },
+         {
+          imgUrl:
+            "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg",
+          firstText: "大漂亮",
+          secondText: "9.6分",
+        },
+         {
+          imgUrl:
+            "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg",
+          firstText: "大漂亮",
+          secondText: "9.6分",
+        },
+         {
+          imgUrl:
+            "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg",
+          firstText: "大漂亮",
+          secondText: "9.6分",
+        },
+         {
+          imgUrl:
+            "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg",
+          firstText: "大漂亮",
+          secondText: "9.6分",
+        },
+         {
+          imgUrl:
+            "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg",
+          firstText: "大漂亮",
+          secondText: "9.6分",
+        },
+         {
+          imgUrl:
+            "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg",
+          firstText: "大漂亮",
+          secondText: "9.6分",
+        },
+         {
+          imgUrl:
+            "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg",
+          firstText: "大漂亮",
+          secondText: "9.6分",
+        },
+         {
+          imgUrl:
+            "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg",
+          firstText: "大漂亮",
+          secondText: "9.6分",
         },
         {
-          src:
-            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594627152552&di=04c36010f872d314df0095f925ffcaea&imgtype=0&src=http%3A%2F%2Fwww.furuizhi.com%2Fupfiles%2Fimage%2F201401%2F201401071420556275.png",
-          title: "",
-          subtitle: ""
+          imgUrl:
+            "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg",
+          firstText: "大漂亮",
+          secondText: "9.6分",
         },
-        {
-          src:
-            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594627152552&di=04c36010f872d314df0095f925ffcaea&imgtype=0&src=http%3A%2F%2Fwww.furuizhi.com%2Fupfiles%2Fimage%2F201401%2F201401071420556275.png",
-          title: "",
-          subtitle: ""
+          {
+          imgUrl:
+            "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg",
+          firstText: "大漂亮",
+          secondText: "9.6分",
         },
-        {
-          src:
-            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594627152552&di=04c36010f872d314df0095f925ffcaea&imgtype=0&src=http%3A%2F%2Fwww.furuizhi.com%2Fupfiles%2Fimage%2F201401%2F201401071420556275.png",
-          title: "",
-          subtitle: ""
+          {
+          imgUrl:
+            "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg",
+          firstText: "大漂亮",
+          secondText: "9.6分",
         },
-        {
-          src:
-            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594627152552&di=04c36010f872d314df0095f925ffcaea&imgtype=0&src=http%3A%2F%2Fwww.furuizhi.com%2Fupfiles%2Fimage%2F201401%2F201401071420556275.png",
-          title: "",
-          subtitle: ""
+         {
+          imgUrl:
+            "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg",
+          firstText: "大漂亮",
+          secondText: "9.6分",
         },
-        {
-          src:
-            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594627152552&di=04c36010f872d314df0095f925ffcaea&imgtype=0&src=http%3A%2F%2Fwww.furuizhi.com%2Fupfiles%2Fimage%2F201401%2F201401071420556275.png",
-          title: "",
-          subtitle: ""
+         {
+          imgUrl:
+            "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg",
+          firstText: "大漂亮",
+          secondText: "9.6分",
         },
-        {
-          src:
-            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594627152552&di=04c36010f872d314df0095f925ffcaea&imgtype=0&src=http%3A%2F%2Fwww.furuizhi.com%2Fupfiles%2Fimage%2F201401%2F201401071420556275.png",
-          title: "",
-          subtitle: ""
+         {
+          imgUrl:
+            "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg",
+          firstText: "大漂亮",
+          secondText: "9.6分",
         },
-        {
-          src:
-            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594627152552&di=04c36010f872d314df0095f925ffcaea&imgtype=0&src=http%3A%2F%2Fwww.furuizhi.com%2Fupfiles%2Fimage%2F201401%2F201401071420556275.png",
-          title: "",
-          subtitle: ""
-        }
-      ]
+         {
+          imgUrl:
+            "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg",
+          firstText: "大漂亮",
+          secondText: "9.6分",
+        },
+         {
+          imgUrl:
+            "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg",
+          firstText: "大漂亮",
+          secondText: "9.6分",
+        },
+         {
+          imgUrl:
+            "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg",
+          firstText: "大漂亮",
+          secondText: "9.6分",
+        },
+         {
+          imgUrl:
+            "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg",
+          firstText: "大漂亮",
+          secondText: "9.6分",
+        },
+         {
+          imgUrl:
+            "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg",
+          firstText: "大漂亮",
+          secondText: "9.6分",
+        },
+         {
+          imgUrl:
+            "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg",
+          firstText: "大漂亮",
+          secondText: "9.6分",
+        },
+         {
+          imgUrl:
+            "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg",
+          firstText: "大漂亮",
+          secondText: "9.6分",
+        },
+         {
+          imgUrl:
+            "http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg",
+          firstText: "大漂亮",
+          secondText: "9.6分",
+        },
+        
+      ],
     };
   },
   methods: {
