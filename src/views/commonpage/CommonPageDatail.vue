@@ -1,15 +1,13 @@
 <template>
   <div class="common-page-datail-container">
-    <p>详情</p>
-
     <div class="top-header-container">
       <img
-        src="http://img.zcool.cn/community/0103e955b07a0a6ac7258178301cdb.jpg@1280w_1l_2o_100sh.jpg"
+        src="http://img34.51tietu.net/pic/2016-120603/20161206033037ursxowkuxsp155172.jpg"
         alt=""
       >
       <div class="top-header-container-right">
-        <p>ndfasdlfaskf</p>
-        <p>2020-07-09</p>
+        <p class="top-p">大漂亮</p>
+        <p class="bottom-p"> 2020-07-09</p>
       </div>
     </div>
 
@@ -176,9 +174,17 @@ export default {
     }
     .top-header-container-right {
       p {
-        font-size: 14px;
         margin: 0px;
         margin-left: 10px;
+      }
+      .top-p {
+        font-size: 14px;
+        font-weight: 700;
+        color: black;
+      }
+      .bottom-p {
+        font-size: 3px;
+        color: gray;
       }
     }
   }
