@@ -1,10 +1,12 @@
 <template>
+  <!-- :src='imgUrl' -->
+
   <div
     class="mt-waterfallsFlow-item"
     @click="waterfallsFlowItemClick"
   >
     <img
-      :src='imgUrl'
+      v-lazy="imgUrl"
       alt=""
     >
     <div class="mt-waterfallsFlow-bottom-container-div">
@@ -58,6 +60,12 @@ export default {
   p {
     margin: 0px;
     margin-left: 5px;
+  }
+
+  img[lazy="loading"] {
+    width: 40px;
+    height: 300px;
+    margin: auto;
   }
   .mt-waterfallsFlow-bottom-container-div {
     background: white;
