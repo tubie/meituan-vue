@@ -31,6 +31,8 @@
         :isFourColumns='false'
         v-for='(item , index ) in meituanItemList'
         :key='index'
+        :imgUrl='item.imgUrl'
+        :title="item.title"
       ></Mt9SquaresItem>
     </div>
 
@@ -98,21 +100,21 @@ export default {
         }
       ],
       meituanItemList: [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6"
+        { imgUrl: "image/home/icon_home_class_takeaway.png", title: "外卖" },
+        { imgUrl: "image/home/icon_home_class_food.png", title: "美食" },
+        { imgUrl: "image/home/icon_home_class_hotle.png", title: "酒店住宿" },
+        { imgUrl: "image/home/icon_home_class_play.png", title: "休闲娱乐" },
+        { imgUrl: "image/home/icon_home_class_movice.png", title: "电影演出" },
+        { imgUrl: "image/home/icon_home_class_car.png", title: "打车" },
+        { imgUrl: "image/home/icon_home_class_uppay.png", title: "充值中心" },
+        { imgUrl: "image/home/icon_home_class_beautify.png", title: "丽人" },
+        { imgUrl: "image/home/icon_home_class_money.png", title: "省钱专区" },
+        { imgUrl: "image/home/icon_home_class_trainticket.png", title: "火车票/机票" },
+        { imgUrl: "image/home/icon_home_class_fruit.png", title: "免费领水果" },
+        { imgUrl: "image/home/icon_home_class_kangaroo.png", title: "袋鼠快跑" },
+        { imgUrl: "image/home/icon_home_class_coupon.png", title: "红包签到" },
+        { imgUrl: "image/home/icon_home_class_hear.png", title: "美发" },
+        { imgUrl: "image/home/icon_home_class_house.png", title: "超市酒店" }
       ],
       waterFlowlist: [
         "1",
@@ -161,7 +163,7 @@ export default {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  
+
   .mint-swipe {
     height: 180px;
   }
