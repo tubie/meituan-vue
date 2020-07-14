@@ -7,13 +7,13 @@
     >
 
       <nut-col span="20">
-        <p class="mt-minesign-item-top-p">成都市大幅度</p>
-        <p class="mt-minesign-item-bottom-p"> 成送到发光时代</p>
+        <p class="mt-minesign-item-top-p">{{title}}</p>
+        <p class="mt-minesign-item-bottom-p"> {{subtitle}}</p>
       </nut-col>
 
       <nut-col span="4">
         <img
-          src="image/icon_common.png"
+          :src="imgUrl"
           alt=""
         >
       </nut-col>
@@ -24,7 +24,20 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props:{
+    title:{
+      type:String
+    },
+    subtitle:{
+      type:String
+    },
+    imgUrl:{
+      type:String,
+      default:"image/icon_common.png"
+    }
+  }
+};
 </script>
 
 <style lang="scss" scoped>
@@ -41,7 +54,7 @@ export default {};
   }
   .mt-minesign-item-bottom-p {
     color: red;
-    font-size: 10px;
+    font-size: 1px;
   }
 }
 </style>

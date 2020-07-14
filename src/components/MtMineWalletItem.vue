@@ -1,14 +1,26 @@
 <template>
   <div class="mt-mine-wallet-item-container">
-    <p class="top-p">999.99万</p>
-    <p class="center-p">信用卡</p>
-    <p class="bottom-p">我的额度</p>
+    <p class="top-p">{{topTitle}}</p>
+    <p class="center-p">{{centerTitle}}</p>
+    <p class="bottom-p">{{bottomTitle}}</p>
 
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+    props:{
+        topTitle:{
+            type:String
+        },
+         centerTitle:{
+            type:String
+        },
+         bottomTitle:{
+            type:String
+        }
+    }
+};
 </script>
 
 <style lang="scss" scoped>
@@ -22,6 +34,7 @@ export default {};
   .top-p {
     font-size: 14px;
     color: black;
+    font-weight: 700;
   }
 
   .center-p {
@@ -30,7 +43,7 @@ export default {};
   }
 
   .bottom-p {
-    font-size: 3px;
+    font-size: 1px;
     color: gray;
   }
 }

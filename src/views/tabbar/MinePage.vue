@@ -35,10 +35,12 @@
 
       <div class="my-wallet-container-center">
 
-        <MtMineWalletItem></MtMineWalletItem>
-        <MtMineWalletItem></MtMineWalletItem>
-        <MtMineWalletItem></MtMineWalletItem>
-        <MtMineWalletItem></MtMineWalletItem>
+        <MtMineWalletItem
+        v-for="(item , index) in walletListData" :key="index"
+        :topTitle='item.topTitle'
+        :centerTitle='item.centerTitle'
+        :bottomTitle='item.bottomTitle'
+        ></MtMineWalletItem>
 
       </div>
 
@@ -68,10 +70,13 @@
 
       <p> 互动签名</p>
       <div class="mt-mine-signItem-container-sub">
-        <MtMineSignItem></MtMineSignItem>
-        <MtMineSignItem></MtMineSignItem>
-        <MtMineSignItem></MtMineSignItem>
-        <MtMineSignItem></MtMineSignItem>
+        <MtMineSignItem
+          v-for="(item, index) in signListData"
+          :key="index"
+          :title="item.title"
+          :subtitle='item.subtitle'
+          :imgUrl='item.imgUrl'
+        ></MtMineSignItem>
       </div>
 
     </div>
@@ -132,36 +137,80 @@ export default {
       recommendToolList: [
         {
           title: "充值中心",
-          imgUrl: ""
+          imgUrl: "image/mine/icon_recomment_phone_uppay.png"
         },
         {
           title: "新个税计算",
-          imgUrl: ""
+          imgUrl: "image/mine/icon_recomment_computer.png"
         },
         {
           title: "垃圾分类",
-          imgUrl: ""
+          imgUrl: "image/mine/icon_recomment_trash.png"
         },
         {
           title: "墨迹天气",
-          imgUrl: ""
+          imgUrl: "image/mine/icon_recomment_weather.png"
         },
         {
           title: "闪付",
-          imgUrl: ""
+          imgUrl: "image/mine/icon_recomment_pay.png"
         },
         {
           title: "发票助手",
-          imgUrl: ""
+          imgUrl: "image/mine/icon_recomment_invoice.png"
         },
         {
           title: "美团大学",
-          imgUrl: ""
+          imgUrl: "image/mine/icon_recomment_school.png"
         },
         {
           title: "我要合作",
-          imgUrl: ""
+          imgUrl: "image/mine/icon_recomment_c.png"
         }
+      ],
+      signListData: [
+        {
+          title: "袋鼠快跑",
+          subtitle: "兑换大额红包>",
+          imgUrl: "image/mine/icon_sign_car.png"
+        },
+        {
+          title: "小美果园",
+          subtitle: "0元领水果>",
+          imgUrl: "image/mine/icon_sign_tree.png"
+        },
+        {
+          title: "红包签到",
+          subtitle: "连续7天兑红包>",
+          imgUrl: "image/mine/icon_sign_in.png"
+        },
+        {
+          title: "邀请有礼",
+          subtitle: "分享得20元优惠>",
+          imgUrl: "image/mine/icon_sign_coupon.png"
+        }
+      ],
+      walletListData: [
+        {
+          topTitle: "99.99元",
+          centerTitle: "美团借钱",
+          bottomTitle: "享免借钱",
+        },
+         {
+          topTitle: "99.99元",
+          centerTitle: "美团信用卡",
+          bottomTitle: "我的额度",
+        },
+        {
+          topTitle: "99.99元",
+          centerTitle: "账单",
+          bottomTitle: "最近支付",
+        },
+         {
+          topTitle: "99.99元",
+          centerTitle: "美食享优惠",
+          bottomTitle: "最高随机减",
+        },
       ]
     };
   },
