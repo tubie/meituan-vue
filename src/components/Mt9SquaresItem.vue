@@ -2,6 +2,7 @@
   <div
     class="mt-item-div"
     :style='currentStyle'
+    @click="itemClick"
   >
     <img
       :src='imgUrl'
@@ -41,6 +42,11 @@ export default {
         }
       }
 
+    }
+  },
+  methods:{
+    itemClick(){
+      this.$emit('itemClickFun');
     }
   }
 };

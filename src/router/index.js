@@ -5,6 +5,8 @@ import FindPage from "../views/tabbar/FindPage"
 import OrderPage from "../views/tabbar/OrderPage"
 import MinePage from "../views/tabbar/MinePage"
 import CommonPageDatail from "../views/commonpage/CommonPageDatail"
+import CommonProList from "../views/commonpage/CommonProList"
+
 
 
 Vue.use(VueRouter)
@@ -34,6 +36,11 @@ routes = [
   {
     path:'/commonpagedatail',
     component:CommonPageDatail
+  },
+
+  {
+    path:'/commonpage/prolist',
+    component:CommonProList
   },
 
   

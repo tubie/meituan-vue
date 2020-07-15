@@ -9,13 +9,14 @@
         :title="item.title"
         :imgUrl='item.imgUrl'
         :key='index'
+        @itemClickFun='mineTopClassItemClick'
       ></Mt9SquaresItem>
     </div>
 
     <div class="mtItem-container-div">
       <div class="mtItem-container-div-subContainer">
         <Mt9SquaresItem
-          :isFourColumns='flase'
+          :isFourColumns='false'
           v-for='(item , index ) in mineTopClasSubData'
           :key='index'
           :title="item.title"
@@ -218,6 +219,13 @@ export default {
     Mt9SquaresItem,
     MtMineSignItem,
     MtMineWalletItem
+  },
+  methods:{
+    mineTopClassItemClick(){
+      this.$router.push({
+        path: "commonpage/prolist"
+      });
+    }
   }
 };
 </script>
