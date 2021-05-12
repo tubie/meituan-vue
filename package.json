@@ -15,7 +15,7 @@
     "core-js": "^3.4.3",
     "js-base64": "^2.5.2",
     "mint-ui": "^2.2.13",
-    "swiper": "^5.4.1",
+    "swiper": "^6.5.1",
     "vue": "^2.6.10",
     "vue-awesome-swiper": "^4.1.1",
     "vue-clipboard": "0.0.1",
